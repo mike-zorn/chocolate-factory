@@ -1,6 +1,6 @@
 {
   "name": "chocolate-factory",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Repeatedly run mocha test with varied parameters",
   "main": "index.js",
   "repository": {
