@@ -5,17 +5,18 @@ Repeatedly run a mocha test with varying parameters.
 
 Example
 -------
+```javascript
+var testAll = require('test-repeater'),
+    thingsToTest = [{
+      description: 'should return bar with argument foo'
+      argument: 'foo'
+      returnValue: 'bar'
+    }];
 
-   var testAll = require('test-repeater'),
-       thingsToTest = [{
-         description: 'should return bar with argument foo'
-         argument: 'foo'
-         returnValue: 'bar'
-       }];
-
-   testAll(thingsToTest).with(function(testDepiction) {
-     baz(testDepiction.argument).should.eql(testDepiction.returnValue);
-   });
+ testAll(thingsToTest).with(function(testDepiction) {
+   baz(testDepiction.argument).should.eql(testDepiction.returnValue);
+ });
+```
 
 Notes
 -----
