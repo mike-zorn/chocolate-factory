@@ -6,7 +6,7 @@ Repeatedly run a mocha test with varying parameters.
 Example
 -------
 ```javascript
-var testAll = require('test-repeater'),
+var testAll = require('chocolate-factory'),
     thingsToTest = [{
       description: 'should return bar with argument foo'
       argument: 'foo'
