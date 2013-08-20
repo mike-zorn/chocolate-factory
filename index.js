@@ -1,6 +1,7 @@
 /* global it: false */
+var _str = require('underscore.string');
 
-module.exports = function(testDepictions) {
+module.exports = function(testDepictions, description) {
   return {
     with: function(test) {
       testDepictions.forEach(function(testDepiction) {
@@ -12,8 +13,11 @@ module.exports = function(testDepictions) {
                 // async tests which don't use the depiction are fail.
                 test.call(this, testDepiction);
               };
-        
-        it(testDepiction.description, testWrapper);
+        if(description) {
+          it(_str.sprintf(description, testDepiction), testWrapper);
+        } else {
+          it(testDepiction.description, testWrapper);
+        }
       });
     }
   };

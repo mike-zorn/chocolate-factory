@@ -1,11 +1,14 @@
 {
   "name": "chocolate-factory",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Repeatedly run mocha test with varied parameters",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/apechimp/chocolate-factory.git"
+  },
+  "dependencies": {
+    "underscore.string": "2.3.3"
   },
   "author": "apechimp",
   "license": "MIT"
