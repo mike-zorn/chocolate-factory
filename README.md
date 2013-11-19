@@ -13,9 +13,26 @@ var testAll = require('chocolate-factory'),
       returnValue: 'bar'
     }];
 
- testAll(thingsToTest).with(function(testDepiction) {
-   baz(testDepiction.argument).should.eql(testDepiction.returnValue);
- });
+testAll(thingsToTest).with(function(testDepiction) {
+  baz(testDepiction.argument).should.eql(testDepiction.returnValue);
+});
+```
+
+or you can set up descriptions automatically
+
+```javascript
+var testAll = require('chocolate-factory'),
+    thingsToTest = [{
+      description: 'should return bar with argument foo'
+      argument: 'foo'
+      returnValue: 'bar'
+    }];
+
+testAll(thingsToTest, 
+  'should return %(returnValue)s with argument %(argument)s').
+  with(function(testDepiction) {
+  baz(testDepiction.argument).should.eql(testDepiction.returnValue);
+});
 ```
 
 Notes
