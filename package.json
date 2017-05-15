@@ -8,7 +8,7 @@
     "url": "https://github.com/apechimp/chocolate-factory.git"
   },
   "dependencies": {
-    "underscore.string": "2.3.3"
+    "underscore.string": "3.3.4"
   },
   "author": "apechimp",
   "license": "MIT"
