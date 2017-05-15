@@ -1,6 +1,8 @@
 chocolate-factory
 =================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/apechimp/chocolate-factory.svg)](https://greenkeeper.io/)
+
 Repeatedly run a mocha test with varying parameters.
 
 Example
